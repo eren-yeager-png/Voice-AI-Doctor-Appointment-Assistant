@@ -1,0 +1,3 @@
+# Pin the Pipecat version and install only the service/transport extras used here.
+pipecat-ai[runner,webrtc,elevenlabs,google]==1.16.0
+python-dotenv==1.2.4
