@@ -30,8 +30,10 @@ from pipecat.workers.runner import WorkerRunner
 
 try:  # Direct script execution does not set a package context.
     from .tool_handlers import ConfirmationState, create_clinic_tool_schemas
+    from . import dashboard_api as _dashboard_api
 except ImportError:  # pragma: no cover - package-style runner
     from backend.tool_handlers import ConfirmationState, create_clinic_tool_schemas
+    from backend import dashboard_api as _dashboard_api
 
 
 # Always load the project-root .env, even if this script is run from backend/.

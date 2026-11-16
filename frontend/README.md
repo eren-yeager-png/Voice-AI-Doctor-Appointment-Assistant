@@ -1,7 +1,15 @@
-# Frontend (Stage 1)
+# Voice AI Doctor Appointment Dashboard
 
-Stage 1 uses Pipecat's built-in browser client at `http://localhost:7860/client/`
-to keep the first voice call setup small. It connects to the local Small WebRTC
-transport and provides microphone, speaker, and transcript controls.
+Copy `.env.example` to `.env` if the backend runs somewhere other than
+`http://localhost:7860`. The app connects to Pipecat's Small WebRTC
+`/api/offer` endpoint and reads dashboard data from the backend's `/api`
+routes.
 
-The assignment dashboard will replace this starter client in Stage 4.
+From this directory:
+
+```sh
+npm install
+npm run dev
+```
+
+Vite serves the dashboard at `http://localhost:5173`.
